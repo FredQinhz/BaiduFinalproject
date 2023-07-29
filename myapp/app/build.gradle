@@ -4,6 +4,10 @@ plugins {
 }
 
 android {
+    // for output APK
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
     namespace 'com.example.myapp'
     compileSdk 33
 

@@ -37,10 +37,15 @@
 - [x] 参考 UE 稿。
   - 实现搜索框搜索功能，使用 webview 加载百度首页，实现用户检索浏览，页面前进后退等能力。
 #### 安装教程
+- 安卓设备可以打开开发者模式直接安装项目 APK 进行预览
 - 使用android studio打开、构建、运行项目即可
 - 注意安装sdk以及将sdk的路径改为本地路径
 
 #### 使用说明
+- 项目导出debug的 apk 地址 
+  > ../myapp/app/build/outputs/apk/debug/app-debug.apk
+- 项目导出的带签名 apk 地址 
+  > ../myapp/app/release/app-release.apk
 - 第一次构建运行项目，需要初始化数据库表 `详情见MainActivity.kt中`，否则数据库内容为空，主页也是空。
 - 初始化数据库：依次初始化`News1`、`News2`、`Accounts`数据库。
 - 首页 Home 中的 + 可以添加新闻，当然这里规定了`type == "置顶"`为不带图片的News，`type == "热点"`为带图片的News，添加的时候选择即可，并且支持打开相册选择图片。
