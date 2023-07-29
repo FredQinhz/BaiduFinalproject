@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.graphics.Color
 import android.os.*
 import android.view.*
+import android.view.animation.AlphaAnimation
 import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,7 +16,6 @@ import com.example.myapp.WeatherActivity
 import com.example.myapp.WebviewActivity
 import com.example.myapp.adapter.*
 import com.example.myapp.database.*
-
 
 
 class TextDemo1(val text1:String, val text2:String, val text3:String)
@@ -56,6 +56,18 @@ class Home_frag : Fragment() {
         icon?.setOnClickListener{
             Toast.makeText(this.context, "I'm a lovely Blue_Whale~\nemm...maybe purple?? I don't care~", Toast.LENGTH_SHORT).show()
         }
+
+        val myTextView1 = activity?.findViewById<TextView>(R.id.textView2)
+        val myTextView2 = activity?.findViewById<TextView>(R.id.textView3)
+
+        // 创建透明度动画，从 0 到 1，持续时间为 4000 毫秒（4秒）
+        var animation = AlphaAnimation(0f, 1f)
+        animation.duration = 4000
+        myTextView1?.startAnimation(animation);
+
+        animation = AlphaAnimation(0f, 0.6f)
+        animation.duration = 4000
+        myTextView2?.startAnimation(animation);
 
         val search_view = activity?.findViewById<SearchView>(R.id.sv1)
 

@@ -107,6 +107,7 @@
         android:text="30\u00B0"
         android:textSize="20sp"
         android:textColor="@color/black"
+        android:alpha="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -115,7 +116,7 @@
         android:layout_width="72dp"
         android:layout_height="48dp"
         android:paddingLeft="32dp"
-        android:alpha="0.5"
+        android:alpha="0.6"
         android:text="桂林 晴  44 优"
         android:textSize="10sp"
 
