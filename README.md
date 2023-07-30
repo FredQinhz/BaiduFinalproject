@@ -4,11 +4,12 @@
 大二 南京大学 软件工程 211250126 秦含滋
 #### 介绍
 - 百度移动端大作业
+- 由于开始从一个小测试demo开始开发，包名设置成了`com.example.myapp`，待到最后写完才发现包名需要为`com.yourname.app`的形式，也就不想动了，特此说明
 - 项目运行图片可见此文档最后
 
 #### 软件架构
 软件架构说明
-- 主页的 3 个`fragment`使用一个tab栏进行合格，优化了开始 3 个`activity`的不好实现
+
 
 #### 开发过程
 - [x] 在电脑上搭建 Android 开发环境（基于 Android Studio）。
@@ -46,6 +47,7 @@
   > ../myapp/app/build/outputs/apk/debug/app-debug.apk
 - 项目导出的带签名 apk 地址 
   > ../myapp/app/release/app-release.apk
+- 主页的 3 个`fragment`使用一个tab栏进行合格，优化了开始 3 个`activity`的不好实现
 - 第一次构建运行项目，需要初始化数据库表 `详情见MainActivity.kt中`，否则数据库内容为空，主页也是空。
 - 初始化数据库：依次初始化`News1`、`News2`、`Accounts`数据库。
 - 首页 Home 中的 + 可以添加新闻，当然这里规定了`type == "置顶"`为不带图片的News，`type == "热点"`为带图片的News，添加的时候选择即可，并且支持打开相册选择图片。
