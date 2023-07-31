@@ -68,7 +68,7 @@ class Video_frag: Fragment(){
     private fun initText(){
         repeat(1){
             videoList.add(VideoDemo1("Fred Qin","热门视频1","https://globalimg.sucai999.com/uploadfile/20211210/267440/132836000096069452.mp4"))
-            videoList.add(VideoDemo1("Byron Howard","疯狂动物城1","http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"))
+            videoList.add(VideoDemo1("Byron Howard","疯狂动物城1","http://ugchwy.gtimg.com/gzc_1000035_0bc3mmahsaaalyan73ohmrsjky6dpfrqa6ka.f622.mp4?vkey=0D726EFC7D325EA39607D8EE1B612A6B2D8FD7DB71197837223DD197923D610C69D0662708893E5969D7A533EBABBC5E199156F611702431122C2CE9E427E6B30FB49AAEFA10A2698D31582A6CA14960F2C79EB134CEEF719887127C39A136302C5017E82C4DAEF12E3094C340BBF2748A8B48ABA96F7CEF"))
             videoList.add(VideoDemo1("Kenneth Graham","热门电影1","https://media.w3.org/2010/05/sintel/trailer.mp4"))
         }
     }
