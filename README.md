@@ -45,7 +45,7 @@
 - 注意安装sdk以及将sdk的路径改为本地路径
 
 #### 使用说明
-- 项目导出调试版本 apk 地址 
+- 项目导出调试版本 apk 地址 （默认会被git ignore，所以详见`app-release.apk`）
   > ../myapp/app/build/outputs/apk/debug/app-debug.apk
 - 项目导出发布版本 apk 地址 
   > ../myapp/app/release/app-release.apk
