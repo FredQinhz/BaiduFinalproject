@@ -37,6 +37,8 @@
   - 完成视频落地页功能，支持视频播放。可使用 MediaPlayer 或第三方播放器。
 - [x] 参考 UE 稿。
   - 实现搜索框搜索功能，使用 webview 加载百度首页，实现用户检索浏览，页面前进后退等能力。
+- [x] 基于 UE 稿。
+  - 实现新闻落地页界面。
 #### 安装教程
 - 安卓设备可以打开开发者模式直接安装项目 APK 进行预览
 - 使用android studio打开、构建、运行项目即可
@@ -50,6 +52,7 @@
 - 主页的 3 个`fragment`使用一个tab栏进行合格，优化了开始 3 个`activity`的不好实现
 - 第一次构建运行项目，需要初始化数据库表 `详情见MainActivity.kt中`，否则数据库内容为空，主页也是空。
 - 初始化数据库：依次初始化`News1`、`News2`、`Accounts`数据库。
+- 首页 Home 中的新闻可点击进入落地页，查看新闻详情。
 - 首页 Home 中的 + 可以添加新闻，当然这里规定了`type == "置顶"`为不带图片的News，`type == "热点"`为带图片的News，添加的时候选择即可，并且支持打开相册选择图片。
 - 天气页面则是仿照ios系统的天气页面布局来完成，使用到了当地当天的特定数据作为展示。
 - 首页 Home 中的搜索栏则是利用`webView`，结合传参来实现调用百度的搜索功能。
@@ -69,9 +72,9 @@
 
 #### 软件页面展示
 ![Alt text](imgs/image.png)
-![Alt text](imgs/image-0.png)
 ![Alt text](imgs/image-1.png)
 ![Alt text](imgs/image-2.png)
+![Alt text](imgs/image-0.png)
 ![Alt text](imgs/image-3.png)
 ![Alt text](imgs/image-4.png)
 ![Alt text](imgs/image-5.png)
