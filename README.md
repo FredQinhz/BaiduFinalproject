@@ -45,9 +45,9 @@
 - 注意安装sdk以及将sdk的路径改为本地路径
 
 #### 使用说明
-- 项目导出debug的 apk 地址 
+- 项目导出调试版本 apk 地址 
   > ../myapp/app/build/outputs/apk/debug/app-debug.apk
-- 项目导出的带签名 apk 地址 
+- 项目导出发布版本 apk 地址 
   > ../myapp/app/release/app-release.apk
 - 主页的 3 个`fragment`使用一个tab栏进行合格，优化了开始 3 个`activity`的不好实现
 - 第一次构建运行项目，如果发现主页新闻图片错误乱入之后，可以先清除`delete`数据库中的表，然后重新运行即可。
